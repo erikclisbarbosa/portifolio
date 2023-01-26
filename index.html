@@ -10,108 +10,44 @@
     <script src="https://kit.fontawesome.com/60a78c818a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="container">
-        <img class="container__logo" src="./img/logo.svg" alt="">  
-        <nav class="container__menu">
-            <a class="container__menu-item" href="#">Home</a>
-            <a class="container__menu-item" href="#">Sobre mim</a>
-            <a class="container__menu-item" href="#">Projetos</a>
-            <a class="container__menu-item" href="#">Contato</a>
-        </nav> 
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <img src="./img/logo.svg" class="logo"></label>
+            <ul>
+              <li><a  href="#home">Home</a></li>
+              <li><a  href="#sobre">Sobre mim</a></li>
+              <li><a  href="#projetos">Projetos</a></li>
+              <li><a  href="#contato">Contato</a></li>
+            </ul>
+          </nav> 
     </header>
     <main>
-        <section class="container__conteudo">
-            <div>
+        <section id="home" class="container">
                 <h1 class="container__titulo">Olá! Eu sou o <span>Erikclis</span>.</h1>
-                <p class="container__titulo-segundario">Desenvolvedor Front-end</p>
-                <Button class="container__botao1"><i class="fa-brands fa-linkedin"></i> Linkedin</Button>
-                <Button class="container__botao2"><i class="fa-brands fa-square-github"></i> GitHub</Button>
-            </div>
+                <h2 class="container__titulo-segundario">Desenvolvedor Front-end</h2>
+                <div>
+                    <button class="container__botao1"><i class="fa-brands fa-linkedin"></i> Linkedin</button>
+                    <button class="container__botao2"><i class="fa-brands fa-square-github"></i> GitHub</button>
+                </div>
+        </section>
+        <section id="sobre" class="container">
             <div>
-                <img class="container__imagem" src="./img/logo-1.svg" alt="">
+                <img src="./img/logo-1.svg" alt="">
             </div>
+            <h2 class="container__titulo-segundario">Sobre mim</h2>
+            <p class="container__texto">Olá, me chamo Erikclis. Tenho 27 anos cursando o 2º Semestre Análise e Desenvolvimento de Sistemas e atualmente em processo de transição de carreira, estou em busca de uma oportunidade de Estágio ou Júnior como Desenvolvedor Front-End.</p>
+            <p class="container__texto">Possuo formação acadêmica em Ciências Contábeis, aprovação no exame de suficiência do CFC em 2019 como Contador e experiência na área de gestão financeira e fiscal, possuo facilidade em trabalhar em equipe que foi aperfeiçoada na função de Diretor Executivo de Finanças, onde eu era responsável por dirigir, administrar, coordenar e fiscalizar as atividades do setor financeiro.</p>
+        
         </section>
-        <section class="container__conteudo">
-            <img class="container__imagem" src="./img/logo-2.svg" alt="">
-            <div>
-                <h2 class="titulo__segundario">Sobre mim</h2>
-                <p class="container__texto">
-                    Olá, me chamo Erikclis. Tenho 27 anos cursando o 2º Semestre Análise e Desenvolvimento de Sistemas e atualmente em processo de transição de carreira, estou em busca de uma oportunidade de Estágio ou Júnior como Desenvolvedor Front-End.
-                </p>
-                <p class="container__texto">
-                    Possuo formação acadêmica em Ciências Contábeis, aprovação no exame de suficiência do CFC em 2019 como Contador e experiência na área de gestão financeira e fiscal, possuo facilidade em trabalhar em equipe que foi aperfeiçoada na função de Diretor Executivo de Finanças, onde eu era responsável por dirigir, administrar, coordenar e fiscalizar as atividades do setor financeiro.
-                </p>
-                <p class="container__texto">
-                    Atualmente estou focando o meu aprendizado em Lógica de Programação, HTML, CSS, Javascript e Git/Github, por meio da plataforma Alura, para poder formar uma base sólida que me proporcione o aprofundamento dos meus projetos.
-                </p>
-            </div>
+        <section id="projetos" class="container">
+            
         </section>
-        <section class="container__projeto">
-            <h2 class="container__projeto-titulo">Projetos</h2>
-            <article class="container__caixas">
-                <div class="container__caixas-item">
-                    <img src="./img/em-breve.jpg" alt="" class="container__caixas-imagem">
-                    <h3 class="container__caixas-titulo">Lorem Ipsum</h3>
-                    <p class="container__caixas-texto">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-                    <h4 class="container__caixas-subtitulo">HTML - CSS - JAVASCRIPT</h4>
-                    <div class="container__caixas-icones">
-                        <a class="container__caixas-links" href=""><i class="fa-brands fa-square-github"></i></a>
-                        <a class="container__caixas-links" href=""><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="container__caixas-item">
-                    <img src="./img/em-breve.jpg" alt="" class="container__caixas-imagem">
-                    <h3 class="container__caixas-titulo">Lorem Ipsum</h3>
-                    <p class="container__caixas-texto">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-                    <h4 class="container__caixas-subtitulo">HTML - CSS - JAVASCRIPT</h4>
-                    <div class="container__caixas-icones">
-                        <a class="container__caixas-links" href=""><i class="fa-brands fa-square-github"></i></a>
-                        <a class="container__caixas-links" href=""><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="container__caixas-item">
-                    <img src="./img/em-breve.jpg" alt="" class="container__caixas-imagem">
-                    <h3 class="container__caixas-titulo">Lorem Ipsum</h3>
-                    <p class="container__caixas-texto">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-                    <h4 class="container__caixas-subtitulo">HTML - CSS - JAVASCRIPT</h4>
-                    <div class="container__caixas-icones">
-                        <a class="container__caixas-links" href=""><i class="fa-brands fa-square-github"></i></a>
-                        <a class="container__caixas-links" href=""><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="container__caixas-item">
-                    <img src="./img/em-breve.jpg" alt="" class="container__caixas-imagem">
-                    <h3 class="container__caixas-titulo">Lorem Ipsum</h3>
-                    <p class="container__caixas-texto">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-                    <h4 class="container__caixas-subtitulo">HTML - CSS - JAVASCRIPT</h4>
-                    <div class="container__caixas-icones">
-                        <a class="container__caixas-links" href=""><i class="fa-brands fa-square-github"></i></a>
-                        <a class="container__caixas-links" href=""><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="container__caixas-item">
-                    <img src="./img/em-breve.jpg" alt="" class="container__caixas-imagem">
-                    <h3 class="container__caixas-titulo">Lorem Ipsum</h3>
-                    <p class="container__caixas-texto">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-                    <h4 class="container__caixas-subtitulo">HTML - CSS - JAVASCRIPT</h4>
-                    <div class="container__caixas-icones">
-                        <a class="container__caixas-links" href=""><i class="fa-brands fa-square-github"></i></a>
-                        <a class="container__caixas-links" href=""><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                <div class="container__caixas-item">
-                    <img src="./img/em-breve.jpg" alt="" class="container__caixas-imagem">
-                    <h3 class="container__caixas-titulo">Lorem Ipsum</h3>
-                    <p class="container__caixas-texto">"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</p>
-                    <h4 class="container__caixas-subtitulo">HTML - CSS - JAVASCRIPT</h4>
-                    <div class="container__caixas-icones">
-                        <a class="container__caixas-links" href=""><i class="fa-brands fa-square-github"></i></a>
-                        <a class="container__caixas-links" href=""><i class="fa-solid fa-earth-americas"></i></a>
-                    </div>
-                </div>
-                
-            </article>
+        <section id="contato" class="container">
+    
         </section>
-    </main>
 </body>
 </html>
