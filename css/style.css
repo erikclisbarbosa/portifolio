@@ -55,7 +55,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a:hover  {
+a:hover {
     background: var(--cor-linkedin);
     transition: .5s;
 }
@@ -75,6 +75,10 @@ a:hover  {
 }
 
 /*Section Home*/
+#home {
+    background-color: var(--cor-background);
+    color: var(--cor-principal);
+}
 .container {
     display: flex;
     justify-content: center;
@@ -103,7 +107,7 @@ a:hover  {
 .container__botao2 {
     background-color: var(--cor-background);
     color: var(--cor-principal);
-    border: 1px solid var(--cor-background);
+    border: 1px solid var(--cor-principal);
 }
 
 .container__botao1,
@@ -139,7 +143,45 @@ a:hover  {
 }
 
 /*Section Projetos*/
+#projetos {
+    background-color: var(--cor-background);
+    color: var(--cor-principal);
+    height: 100vh;
+}
 
+.container__caixa {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.container__item {
+   border: 1px solid var(--cor-principal);
+   border-radius: 20px;
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.container__imagem {
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+}
+
+.container__tituloprojeto {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 3px solid var(--cor-background);
+}
+
+.container__subtituloprojeto {
+    text-align: justify;
+    width: 90%;
+}
 
 @media (max-width: 952px) {
     label.logo {
@@ -157,13 +199,13 @@ a:hover  {
       display: block;
     }
 
-    ul {
+    .menu {
       position: fixed;
       width: 100%;
-      height: 100vh;
+      height: 50vh;
       background: var(--cor-background);
       top: 80px;
-      left: -100%;
+      left: 100%;
       text-align: center;
       transition: all .5s;
     }
@@ -181,6 +223,15 @@ a:hover  {
     }
     #check:checked ~ ul {
       left: 0;
+    }
+    .container__caixa {
+        flex-direction: column;
+    }
+    .container__item {
+        flex-direction: column;
+    }
+    #projetos {
+        height: 170vh;
     }
 }
 
